@@ -1,0 +1,212 @@
+a {
+    text-decoration: none;
+}
+
+/* Border untuk setiap sel hari pada Month, Week, dan Day View */
+#calendar .fc-daygrid-day,
+#calendar .fc-timegrid-slot,
+#calendar .fc-col-header-cell {
+    border: 1px solid #000 !important; /* Pastikan border tebal */
+}
+
+/* Border pada grid untuk tampilan mingguan dan harian */
+#calendar .fc-daygrid-day,
+#calendar .fc-timegrid-day,
+#calendar .fc-timegrid-slot {
+    border: 1px solid #000 !important;
+}
+
+/* Border untuk grid di tampilan week */
+#calendar .fc-daygrid-week-number {
+    border: 1px solid #000 !important;
+}
+
+/* Tambahkan border untuk slot waktu di tampilan hari dan minggu */
+#calendar .fc-timegrid-slot {
+    border: 1px solid #000 !important;
+}
+
+/* Border untuk header waktu (jam) */
+#calendar .fc-timegrid-col {
+    border: 1px solid #000 !important;
+}
+
+#calendar .fc-day-sun,
+#calendar_side .fc-day-sun,
+#calendar .fc-day-sat,
+#calendar_side .fc-day-sat {
+    background-color: #ff9898;
+}
+
+#calendar .fc-scrollgrid {
+    border: 1px solid #000;
+    /* Border luar grid */
+}
+
+#calendar .fc-scrollgrid-liquid,
+#calendar .fc-scrollgrid-section,
+#calendar .fc-scrollgrid-section-header,
+#calendar .fc-scrollgrid-shrink,
+#calendar .fc-scrollgrid-sync-table colgroup > col,
+#calendar .fc-timegrid-axis {
+    border: 1px solid #000;
+    /* Border luar grid */
+}
+
+#calendar .fc-col-header-cell {
+    border: 1px solid #000;
+    /* Border tebal hitam */
+}
+
+#calendar .fc-daygrid-day {
+    border: 1px solid #000;
+    /* Border tebal hitam */
+}
+
+#calendar .fc-col-header-cell-cushion,
+#calendar_side .fc-col-header-cell-cushion {
+    color: #000; /* Warna teks hitam */
+    font-weight: bold; /* Opsional: Buat teks lebih tebal */
+}
+
+#calendar .fc-day-today,
+#calendar_side .fc-day-today {
+    background-color: #ffeb3b;
+    /* Warna kuning terang */
+}
+
+#calendar .fc-col-header-cell,
+#calendar .fc-event-title,
+#calendar .fc-daygrid-day-number {
+    color: black;
+    font-size: 10px;
+}
+
+/* Button Kalender */
+
+/* Tombol "Previous & Next" */
+#calendar .fc-prev-button,
+#calendar .fc-next-button {
+    background-color: #17a2b8; /* Warna background */
+    border-color: #025b68;
+    color: #fff;
+}
+
+/* Tombol "Today" */
+#calendar .fc-today-button {
+    background-color: #ffeb3b;
+    border-color: #ffeb3b;
+    color: #000;
+}
+
+/* Hover efek untuk tombol khusus */
+#calendar .fc-prev-button:hover,
+#calendar .fc-next-button:hover,
+#calendar .fc-today-button:hover {
+    opacity: 0.9;
+}
+
+#calendar .fc-multiMonthYear-button,
+#calendar .fc-dayGridMonth-button,
+#calendar .fc-timeGridWeek-button,
+#calendar .fc-timeGridDay-button,
+#calendar .fc-listMonth-button {
+    background-color: #3b58ff;
+    border-color: #00179a;
+    color: #fff;
+}
+
+#calendar .fc-multiMonthYear-button:hover,
+#calendar .fc-dayGridMonth-button:hover,
+#calendar .fc-timeGridWeek-button:hover,
+#calendar .fc-timeGridDay-button:hover,
+#calendar .fc-listMonth-button:hover {
+    opacity: 0.9;
+}
+
+#calendar .fc-multiMonthYear-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Maksimal 6 kolom */
+    gap: 5px; /* Jarak antar kolom */
+}
+
+#calendar .fc-multiMonthYear-view .fc-col-header-cell {
+    font-size: 10px;
+}
+
+#calendar .fc-multiMonthYear-view .fc-daygrid-day-number {
+    font-size: 7px;
+}
+
+#calendar .fc-multimonth-month .fc-daygrid-day-bottom,
+#calendar_side .fc-daygrid-day-bottom {
+    font-size: 8px;
+    background-color: aqua;
+}
+
+#calendar .fc-daygrid-event-harness .fc-event-title .fc-sticky {
+    display: none !important;
+}
+
+#calendar .fc-multimonth-month .fc-daygrid-event-harness,
+#calendar_side .fc-daygrid-event-harness {
+    visibility: visible !important;
+}
+#calendar .fc-multimonth-month .fc-sticky,
+#calendar_side .fc-sticky {
+    display: none;
+}
+
+#calendar_side .fc-event-title-container {
+    height: 3px;
+}
+
+#calendar .fc-sticky {
+    text-align: center !important;
+    font-weight: bold !important;
+    color: white;
+}
+#calendar .fc-event-title-container {
+    text-align: center !important;
+}
+
+/* #calendar .fc-daygrid-more-link {
+    width: 0.3px !important;
+    height: 0.3px !important;
+}
+#calendar .fc-daygrid-day-bottom {
+    width: 0.4px !important;
+} */
+
+#calendar .fc-toolbar-title {
+    font-size: 20px !important;
+}
+
+#calendar .fc-popoverfc-daygrid-block-event .fc-event-title {
+    color: white !important;
+}
+
+/* Kalender side */
+/* Judul kalender */
+#calendar_side .fc-toolbar-title {
+    color: black;
+    font-size: 16px; /* Judul kalender lebih kecil */
+}
+
+/* Nama hari (header grid) */
+#calendar_side .fc-col-header-cell {
+    color: black;
+    font-size: 12px; /* Header nama hari lebih kecil */
+}
+
+/* Teks acara */
+#calendar_side .fc-event-title {
+    color: black;
+    font-size: 10px; /* Teks acara lebih kecil */
+}
+
+/* Angka di dalam sel tanggal */
+#calendar_side .fc-daygrid-day-number {
+    color: black;
+    font-size: 10px; /* Angka tanggal lebih kecil */
+}
